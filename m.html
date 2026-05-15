@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pak Chinese Cuisine | Premium Taste in Wah Cantt</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', sans-serif; background-color: #0f0f0f; color: white; }
+        .font-serif { font-family: 'Playfair Display', serif; }
+        .gold-gradient { background: linear-gradient(45deg, #d4af37, #f9d423); }
+        .card-glow:hover { box-shadow: 0 0 20px rgba(230, 57, 70, 0.6); transform: translateY(-10px); transition: all 0.3s ease; }
+        .nav-blur { backdrop-filter: blur(10px); background: rgba(0,0,0,0.8); }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="fixed w-full z-50 nav-blur py-4 px-6 flex justify-between items-center border-b border-red-900">
+        <div class="text-2xl font-bold text-red-600 tracking-tighter">
+            <span class="text-white">PAK</span> CHINESE <span class="text-yellow-500">CUISINE</span>
+        </div>
+        <div class="hidden md:flex space-x-8 font-medium">
+            <a href="#home" class="hover:text-red-500 transition">Home</a>
+            <a href="#menu" class="hover:text-red-500 transition">Menu</a>
+            <a href="#deals" class="hover:text-red-500 transition">Special Deals</a>
+            <a href="#location" class="hover:text-red-500 transition">Location</a>
+        </div>
+        <a href="tel:03070001143" class="bg-red-600 hover:bg-red-700 px-5 py-2 rounded-full text-sm font-bold transition">ORDER NOW</a>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="relative h-screen flex items-center justify-center text-center px-4 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1552611014-47a7397ff6c2?auto=format&fit=crop&w=1920&q=80" class="w-full h-full object-cover opacity-40" alt="Chinese Food">
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-4xl">
+            <h1 class="text-5xl md:text-8xl font-serif font-bold mb-4 leading-tight">
+                The Art of <span class="text-red-600">Pak-Chinese</span> Fusion
+            </h1>
+            <p class="text-lg md:text-xl mb-8 text-gray-300 italic">Serving the most authentic tastes in Basti Wah Cantt</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#menu" class="gold-gradient text-black font-bold px-8 py-4 rounded-lg hover:scale-105 transition">EXPLORE MENU</a>
+                <a href="#location" class="border border-white px-8 py-4 rounded-lg hover:bg-white hover:text-black transition">FIND US</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMBOS SECTION -->
+    <section id="menu" class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-serif font-bold">Our Signature <span class="text-red-600">Combos</span></h2>
+            <div class="w-24 h-1 bg-red-600 mx-auto mt-2"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Combo A -->
+            <div class="bg-zinc-900 p-6 rounded-2xl border border-zinc-800 card-glow">
+                <div class="text-red-600 font-bold text-xl mb-2">COMBO - A</div>
+                <h3 class="text-xl font-bold mb-4">Chicken Mongolian</h3>
+                <ul class="text-gray-400 text-sm space-y-2 mb-6">
+                    <li><i class="fa-solid fa-check text-red-500 mr-2"></i>Egg Fried Rice</li>
+                    <li><i class="fa-solid fa-check text-red-500 mr-2"></i>Chowmein</li>
+                </ul>
+                <div class="flex justify-between items-center">
+                    <span class="text-2xl font-bold text-white">Rs. 799/-</span>
+                    <button class="bg-red-600 p-2 rounded-lg"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+            </div>
+            <!-- Combo B -->
+            <div class="bg-zinc-900 p-6 rounded-2xl border border-zinc-800 card-glow">
+                <div class="text-red-600 font-bold text-xl mb-2">COMBO - B</div>
+                <h3 class="text-xl font-bold mb-4">Fish Hot Garlic</h3>
+                <ul class="text-gray-400 text-sm space-y-2 mb-6">
+                    <li><i class="fa-solid fa-check text-red-500 mr-2"></i>Egg Fried Rice</li>
+                    <li><i class="fa-solid fa-check text-red-500 mr-2"></i>Chowmein</li>
+                </ul>
+                <div class="flex justify-between items-center">
+                    <span class="text-2xl font-bold text-white">Rs. 899/-</span>
+                    <button class="bg-red-600 p-2 rounded-lg"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+            </div>
+            <!-- Combo C -->
+            <div class="bg-zinc-900 p-6 rounded-2xl border border-zinc-800 card-glow">
+                <div class="text-red-600 font-bold text-xl mb-2">COMBO - C</div>
+                <h3 class="text-xl font-bold mb-4">Beef Chilli Dry</h3>
+                <ul class="text-gray-400 text-sm space-y-2 mb-6">
+                    <li><i class="fa-solid fa-check text-red-500 mr-2"></i>Egg Fried Rice</li>
+                    <li><i class="fa-solid fa-check text-red-500 mr-2"></i>Chowmein</li>
+                </ul>
+                <div class="flex justify-between items-center">
+                    <span class="text-2xl font-bold text-white">Rs. 899/-</span>
+                    <button class="bg-red-600 p-2 rounded-lg"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+            </div>
+            <!-- Combo D -->
+            <div class="bg-zinc-900 p-6 rounded-2xl border border-zinc-800 card-glow">
+                <div class="text-red-600 font-bold text-xl mb-2">COMBO - D</div>
+                <h3 class="text-xl font-bold mb-4">Prawns Mongolian</h3>
+                <ul class="text-gray-400 text-sm space-y-2 mb-6">
+                    <li><i class="fa-solid fa-check text-red-500 mr-2"></i>Egg Fried Rice</li>
+                    <li><i class="fa-solid fa-check text-red-500 mr-2"></i>Chowmein</li>
+                </ul>
+                <div class="flex justify-between items-center">
+                    <span class="text-2xl font-bold text-white">Rs. 999/-</span>
+                    <button class="bg-red-600 p-2 rounded-lg"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STUDENT DEALS (Highlighted Section) -->
+    <section id="deals" class="py-20 bg-zinc-950 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <span class="bg-red-600 text-white px-4 py-1 rounded-full text-sm font-bold uppercase">Limited Time</span>
+                <h2 class="text-4xl font-serif font-bold mt-4">Student <span class="text-yellow-500">Special Deals</span></h2>
+                <p class="text-gray-400 mt-2">Available Daily: 11:00 AM to 4:00 PM</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="border-2 border-yellow-500/30 p-8 rounded-3xl text-center relative overflow-hidden group">
+                    <div class="absolute -top-5 -right-5 bg-yellow-500 text-black w-16 h-16 rounded-full flex items-center justify-center font-bold rotate-12 group-hover:rotate-0 transition">400/-</div>
+                    <h3 class="text-2xl font-bold mb-4 text-white">Deal 1</h3>
+                    <p class="text-gray-400 mb-4 leading-relaxed">2 Fried Wings, 2 Fried Momos, Veg Chowmein, Cold Drink</p>
+                    <button class="text-yellow-500 font-bold hover:underline">Order Now →</button>
+                </div>
+                <div class="border-2 border-yellow-500/30 p-8 rounded-3xl text-center relative overflow-hidden group">
+                    <div class="absolute -top-5 -right-5 bg-yellow-500 text-black w-16 h-16 rounded-full flex items-center justify-center font-bold rotate-12 group-hover:rotate-0 transition">400/-</div>
+                    <h3 class="text-2xl font-bold mb-4 text-white">Deal 2</h3>
+                    <p class="text-gray-400 mb-4 leading-relaxed">Chicken Chowmein, Egg Fried Rice, Black Paper Sauce, Cold Drink</p>
+                    <button class="text-yellow-500 font-bold hover:underline">Order Now →</button>
+                </div>
+                <div class="border-2 border-yellow-500/30 p-8 rounded-3xl text-center relative overflow-hidden group">
+                    <div class="absolute -top-5 -right-5 bg-yellow-500 text-black w-16 h-16 rounded-full flex items-center justify-center font-bold rotate-12 group-hover:rotate-0 transition">400/-</div>
+                    <h3 class="text-2xl font-bold mb-4 text-white">Deal 3</h3>
+                    <p class="text-gray-400 mb-4 leading-relaxed">Chicken Sandwich, French Fries, Cold Salad, Cold Drink</p>
+                    <button class="text-yellow-500 font-bold hover:underline">Order Now →</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT & LOCATION -->
+    <section id="location" class="py-20 px-6 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div>
+            <h2 class="text-4xl font-serif font-bold mb-6">Visit Us In <span class="text-red-600">Wah Cantt</span></h2>
+            <p class="text-gray-400 mb-6 leading-relaxed">
+                C-149, 1st Floor, Rehman Plaza, Qabristan Road, Lala Rukh, Wah Cantt.
+            </p>
+            <div class="space-y-4 mb-8">
+                <div class="flex items-center space-x-4">
+                    <div class="bg-red-600 p-3 rounded-full"><i class="fa-solid fa-phone"></i></div>
+                    <span class="text-lg">Restaurant: 051-45 33 000</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div class="bg-red-600 p-3 rounded-full"><i class="fa-solid fa-mobile-screen"></i></div>
+                    <span class="text-lg">Mobile: 0307-0001143</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div class="bg-red-600 p-3 rounded-full"><i class="fa-solid fa-truck"></i></div>
+                    <span class="text-lg">Food Cart: 0318-0687143</span>
+                </div>
+            </div>
+            <div class="inline-block bg-zinc-800 px-6 py-3 rounded-lg border border-zinc-700">
+                <p class="text-sm text-gray-400">Operational Hours:</p>
+                <p class="font-bold">Morning 11:00 am to Night 2:00 am</p>
+            </div>
+        </div>
+        <div class="h-80 md:h-full min-h-[400px] rounded-3xl overflow-hidden bg-zinc-800">
+            <!-- Embedded Google Maps placeholder -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.5!2d33.4!3d33.6!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsS1mKzYnMC4wIk4sIDczSbxNTTjIuMCJF!5e0!3m2!1sen!2spk!4v1625000000000!5m2!1sen!2spk" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-10 text-center border-t border-zinc-800 text-gray-500 text-sm">
+        <p>&copy; 2023 Pak Chinese Cuisine (PCC). All Rights Reserved.</p>
+        <p class="mt-2">Designed for a Premium Dining Experience.</p>
+    </footer>
+
+    <!-- Floating WhatsApp/Call Button -->
+    <a href="https://wa.me/923070001143" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-lg hover:scale-110 transition z-50">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>
